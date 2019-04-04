@@ -1,13 +1,11 @@
-<?php
-
-class Template
+<?php class Template
 {
-  //Path to templete
+  // Path To Template
   protected $template;
-  //variables passed in
+  // Vars Passed In
   protected $vars = array();
 
-  //constructor
+  // Constructor
   public function __construct($template)
   {
     $this->template = $template;
@@ -30,6 +28,8 @@ class Template
     ob_start();
 
     include basename($this->template);
+
     return ob_get_clean();
   }
 }
+?>

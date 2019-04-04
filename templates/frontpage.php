@@ -7,22 +7,16 @@
   </p>
 </div>
 
-<div class="row">
-  <div class="col-d-10">
-    <h4>Subheading</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit saepe culpa, repellendus molestias iste doloremque corporis vel enim fuga voluptatum at eveniet quos adipisci repellat, beatae repudiandae excepturi aut. Fugiat?</p>
-  </div>
-  <div class="col-md-2">
-    <a href="#" class="btn btn-primary">View</a>
-  </div>
-</div>
-<div class="row mt-3">
-  <div class="col-d-10">
-    <h4>Subheading</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit saepe culpa, repellendus molestias iste doloremque corporis vel enim fuga voluptatum at eveniet quos adipisci repellat, beatae repudiandae excepturi aut. Fugiat?</p>
-  </div>
-  <div class="col-md-2">
-    <a href="#" class="btn btn-primary">View</a>
-  </div>
-</div>
+<?php foreach ($jobs as $job) : ?>
+  <div class="row">
+    <div class="col-d-10">
+      <h4><?php echo $job->job_title; ?></h4>
+        <p><?php echo $job->description; ?></p>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    <?php endforeach; ?>
+
 <?php include 'inc/footer.php'; ?>
