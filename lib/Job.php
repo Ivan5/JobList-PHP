@@ -80,4 +80,19 @@ class Job
       return false;
     }
   }
+
+  //delete job
+  public function delete($id)
+  {
+    $this->db->query("delete from jobs where id = $id");
+
+
+
+    //Execute
+    if ($this->db->execute()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
