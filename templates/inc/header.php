@@ -28,5 +28,5 @@
       </ul>
     </div>
   </nav>
-
+  <?php displayMessage(); ?>
   <div class="container">

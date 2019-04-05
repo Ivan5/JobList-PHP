@@ -1,7 +1,12 @@
 <?php
+
+//Start session
+session_start();
 //config file
 require_once 'config.php';
 
+//Include Helpers
+require_once 'helpers/system_helper.php';
 
 //Autoloader
 
